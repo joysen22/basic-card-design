@@ -1,3 +1,99 @@
+/********** manu css start ********/
+.main-manu {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  background-color: aqua;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+.main-manu > .logo > span {
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(57, 51, 145);
+  position: relative;
+
+  padding: 10px 12px 12px 10px;
+}
+.main-manu > .logo > span::after {
+  content: "";
+  width: 50%;
+  height: 95%;
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-top: 2px solid rgb(43, 71, 230);
+  border-left: 2px solid rgb(43, 71, 230);
+  /* background: yellow; */
+}
+.main-manu > .logo > span::before {
+  content: "";
+  width: 50%;
+  height: 95%;
+  /* background: red; */
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  border-bottom: 2px solid rgb(43, 71, 230);
+  border-right: 2px solid rgb(43, 71, 230);
+}
+.main-manu > ul {
+  list-style: none;
+  display: flex;
+}
+.main-manu > ul > li {
+  padding: 2px 4px;
+  margin-left: 20px;
+  padding: 2px 8px;
+}
+.main-manu > ul > li:hover>a {
+  color: black;
+}
+.main-manu > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  transition: all 1.5s;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown:hover>ul {
+  display: block;
+}
+.dropdown > ul {
+  position: absolute;
+  list-style: none;
+  right: 0%;
+  text-align: start;
+  background-color: aqua;
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px;
+  display: none;
+}
+.dropdown > ul > li {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 2px solid rgb(238, 239, 240);
+}
+.dropdown > ul > li:hover > a {
+  color: black;
+}
+.dropdown > ul > li > a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+/*********** manu css end ***********/
+/* card css start */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -7,7 +103,7 @@
 }
 .main-container {
   width: 100%;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 .container {
   width: 100%;
@@ -43,3 +139,4 @@
   font-weight: 700;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+/* card css end */
